@@ -1,11 +1,4 @@
 {
-  "panel-initial-text": {
-    "thisproject": "이 프로젝트는",
-    "opensource": "오픈된 정보",
-    "see": "보시오",
-    "datasources": "데이터 정보",
-    "contribute": "공헌으로<a href=\"{{link}}\" target=\"_blank\">자기 지역을 추가해주세요</a>"
-  },
   "mobile-main-menu": {
     "map": "전력 지도",
     "areas": "지역",
@@ -39,9 +32,9 @@
     "noParserInfo": "현재 이 지역에 대한 정보를 찾을 수 없습니다. <br/> 더 나은 서비스를 위해 <a href=\"{{link}}\" target=\"_blank\">정보를 제공해 주십시오.</a>.",
     "now": "현재"
   },
-  "left-panel": {
-    "zone-list-header-title": "지역에 따른 기후 영향",
-    "zone-list-header-subtitle": "전력소비에 따른 탄소 밀집도 순위(gCO₂eq/kWh)",
+  "ranking-panel": {
+    "title": "지역에 따른 기후 영향",
+    "subtitle": "전력소비에 따른 탄소 밀집도 순위(gCO₂eq/kWh)",
     "search": "지역 찾기"
   },
   "footer": {
@@ -58,8 +51,6 @@
   },
   "tooltips": {
     "carbonintensity": "탄소집약도",
-    "lowcarbon": "저탄소",
-    "renewable": "재생가능한",
     "crossborderexport": "국경을 넘는 수출",
     "carbonintensityexport": "수출 탄소집약도",
     "ofinstalled": "설비 용량의",
@@ -1017,6 +1008,9 @@
     "MX-PN": {
       "countryName": "멕시코",
       "zoneName": "반도"
+    },
+    "MY": {
+      "zoneName": "말레이시아"
     },
     "MY-EM": {
       "countryName": "말레이시아",

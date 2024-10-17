@@ -1,6 +1,6 @@
 {
   "info": {
-    "intro-text": "Electricity Maps应用程序在网站和手机程序上为居民，能源专家，非政府组织和决策者们提供即时的信息，从而促使人们更好的理解能源转型的挑战。",
+    "text": "Electricity Maps应用程序在网站和手机程序上为居民，能源专家，非政府组织和决策者们提供即时的信息，从而促使人们更好的理解能源转型的挑战。",
     "open-source-text": "这个应用程序是一个<a href='{{link}}' target='_blank'>开源</a> 并由社区提供支持。"
   },
   "button": {
@@ -13,13 +13,6 @@
   },
   "settings-modal": {
     "title": "设置"
-  },
-  "panel-initial-text": {
-    "thisproject": "这个项目是",
-    "opensource": "开源资料",
-    "see": "看",
-    "datasources": "数据来源",
-    "contribute": "通过<a href=\"{{link}}\" target=\"_blank\">添加你的国家</a>进行贡献"
   },
   "country-panel": {
     "source": "来源",
@@ -62,8 +55,9 @@
     "ofinstalled": "的装载容量",
     "utilizing": "利用",
     "withcarbonintensity": "具有碳强度",
-    "lowcarbon": "低碳能源",
-    "renewable": "可再生能源",
+    "zoneHeader": {
+      "lowcarbon": "包含可再生能源及核能"
+    },
     "showWindLayer": "显示风力图层",
     "hideWindLayer": "隐藏风力图层",
     "showSolarLayer": "显示太阳能图层",
@@ -73,8 +67,7 @@
     "temporaryDataOutage": "无可用实时数据",
     "production": "发电",
     "consumption": "用电",
-    "selectLanguage": "语言",
-    "lowCarbDescription": "包含可再生能源及核能"
+    "selectLanguage": "语言"
   },
   "misc": {
     "maintitle": "生活用电二氧化碳排放量",
@@ -1017,6 +1010,9 @@
       "countryName": "墨西哥",
       "zoneName": "半岛"
     },
+    "MY": {
+      "zoneName": "马来西亚"
+    },
     "MY-EM": {
       "countryName": "马来西亚",
       "zoneName": "婆罗洲"
@@ -1700,9 +1696,9 @@
       "text": "风能和太阳能的生产取决于天气。按下太阳和风按钮以显示全球风和阳光的实时强度。"
     }
   },
-  "left-panel": {
-    "zone-list-header-title": "气候影响-按地域划分",
-    "zone-list-header-subtitle": "按消费电力的碳强度排名gCO₂eq/kWh）",
+  "ranking-panel": {
+    "title": "气候影响-按地域划分",
+    "subtitle": "按消费电力的碳强度排名gCO₂eq/kWh）",
     "search": "搜索地区"
   },
   "battery storage": "电池储能"

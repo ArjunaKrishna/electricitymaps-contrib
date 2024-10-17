@@ -1,30 +1,37 @@
 {
   "info": {
-    "intro-text": "L'application Electricity Maps fournit des informations en temps réel sur le web et sur les mobiles pour les citoyens, les experts en énergie, les ONG et les décideurs politiques, favorisant ainsi une meilleure compréhension des défis de la transition énergétique.",
-    "open-source-text": "Cette application est <a href='{{link}}' target='_blank'>Open Source</a> et alimentée par la communauté."
+    "title": "À propos de l'application",
+    "text": "L'application Electricity Maps fournit des informations en temps réel sur le web et sur les mobiles pour les citoyens, les experts en énergie, les ONG et les décideurs politiques, favorisant ainsi une meilleure compréhension des défis de la transition énergétique.",
+    "open-source-text": "Cette application est <a href='{{link}}' target='_blank'>Open Source</a> et alimentée par la communauté.",
+    "version": "Version de l'application: {{version}}",
+    "share-app": "Partagez l'application:"
   },
   "button": {
-    "feedback": "Partagez vos commentaires",
-    "github": "Visiter notre Github",
-    "twitter": "Partager sur Twitter",
+    "reddit": "Rejoignez r/electricitymaps",
+    "github": "Contribuez sur GitHub",
+    "twitter": "Suivez nous sur Twitter",
+    "twitter-share": "Partagez sur Twitter",
     "slack": "Rejoindre la communauté Slack",
+    "linkedin": "Suivez nous sur LinkedIn",
+    "linkedin-share": "Partagez sur LinkedIn",
+    "facebook": "Suivez nous sur Facebook",
+    "facebook-share": "Partagez sur Facebook",
+    "feedback": "Partagez vos commentaires",
+    "faq": "FAQ",
     "privacy-policy": "Politique de confidentialité",
     "legal-notice": "Informations légales"
   },
   "settings-modal": {
     "title": "Paramètres"
   },
-  "panel-initial-text": {
-    "thisproject": "Cette app est",
-    "opensource": "Open Source",
-    "see": "voir",
-    "datasources": "source des données",
-    "contribute": "Contribuez en <a href=\"{{link}}\" target=\"_blank\">ajoutant votre pays</a>"
-  },
   "mobile-main-menu": {
     "map": "Electricity Maps",
     "areas": "Zones",
     "about": "À propos"
+  },
+  "app-banner": {
+    "cta": "Installer",
+    "description": "Données sur l'électricité en direct"
   },
   "onboarding-modal": {
     "view1": {
@@ -65,12 +72,31 @@
   },
   "country-panel": {
     "source": "source",
-    "renewable": "Renouvelable",
     "carbonintensity": "Intensité carbone",
     "lowcarbon": "Bas carbone",
+    "renewable": "Renouvelable",
     "electricityproduction": "Production",
     "electricityconsumption": "Consommation",
     "emissions": "Émissions",
+    "helpfrom": "avec l’aide de",
+    "noDataAtTimestamp": "Données temporairement indisponibles pour cet instant",
+    "noLiveData": "Données temps-réel temporairement indisponibles pour cette zone",
+    "disabledPriceReasons": {
+      "licensing": "Pour des raisons de licence, les prix de l'électricité ne sont pas disponibles pour cette zone"
+    },
+    "emissionFactorDataSourcesTooltip": "Les facteurs d'émission pour la production d'électricité peuvent provenir de plusieurs sources. Cela se produit lorsque plusieurs facteurs, tels que les données spécifiques à une centrale, la production et parfois les sources de secours, sont pris en compte dans les calculs des émissions.",
+    "disabledBreakdownChartReason": "Désactivé pour la vue consommation. Merci de changer la vue en production pour activer le graphique d'origine de l'électricité.",
+    "dataIsDelayed": "Les données relatives à cette région peuvent avoir jusqu'à {{hours}} heures de retard. Les données temps-réel ne peuvent pas être affichées.",
+    "estimated": "estimé",
+    "aggregated": "aggrégé",
+    "dataIsEstimated": "Certaines données de cette région sont estimées. En savoir plus sur notre méthodologie d'estimation <a href=\"https://github.com/electricityMaps/electricitymaps-contrib/wiki/Estimation-methods\" target=\"_blank\">ici</a>.",
+    "exchangesAreMissing": "Les échanges sont pris en compte dans les calculs mais ne sont pas indiqués actuellement. En savoir plus sur notre agrégation historique  <a href=\"https://github.com/electricityMaps/electricitymaps-contrib/wiki/Estimation-methods\" target=\"_blank\">ici</a>.",
+    "estimatedTooltip": "Les données en temps réel pour cette zone sont estimées sur la base des données de la source et des hypothèses du modèle.",
+    "aggregatedTooltip": "Les données pour cette zone sont agrégées sur la base des valeurs horaires historiques.",
+    "helpUs": "Aidez-nous à identifier le problème en consultant les <a href=\"{{link}}\" target=\"_blank\">journaux d'exécution</a> ou contactez le fournisseur de données.",
+    "noParserInfo": "Nous n’avons pas encore d’information pour cette zone. <br/>Vous voulez corriger ça ? Vous pouvez contribuer en <a href=\"{{link}}\" target=\"_blank\">ajoutant des données de zone</a>.",
+    "aggregationDisabled": "Les données ne sont pas disponibles pour la période sélectionnée en raison de données spécifiques manquantes. Essayez une période plus longue.",
+    "now": "Maintenant",
     "by-source": {
       "emissions": "Émissions carbone",
       "electricity-production": "Production d'électricité",
@@ -87,25 +113,16 @@
       "stored": "Stockée",
       "produced": "Produite"
     },
-    "contribute": "Contribuez sur GitHub",
-    "helpfrom": "avec l’aide de",
-    "noDataAtTimestamp": "Données temporairement indisponibles pour cet instant",
-    "noLiveData": "Données temps-réel temporairement indisponibles pour cette zone",
-    "noParserInfo": "Nous n’avons pas encore d’information pour cette zone. <br/>Vous voulez corriger ça ? Vous pouvez contribuer en <a href=\"{{link}}\" target=\"_blank\">ajoutant des données de zone</a>.",
-    "aggregationDisabled": "Les données ne sont pas disponibles pour la période sélectionnée en raison de données spécifiques manquantes. Essayez une période plus longue.",
-    "disabledPriceReasons": {
-      "licensing": "Pour des raisons de licence, les prix de l'électricité ne sont pas disponibles pour cette zone"
-    },
-    "now": "Maintenant",
-    "disabledBreakdownChartReason": "Désactivé pour la vue consommation. Merci de changer la vue en production pour activer le graphique d'origine de l'électricité.",
-    "dataIsDelayed": "Les données relatives à cette région peuvent avoir jusqu'à {{hours}} heures de retard. Les données temps-réel ne peuvent pas être affichées.",
-    "estimated": "estimé",
-    "aggregated": "aggrégé",
-    "dataIsEstimated": "Certaines données de cette région sont estimées. En savoir plus sur notre méthodologie d'estimation <a href=\"https://github.com/electricityMaps/electricitymaps-contrib/wiki/Estimation-methods\" target=\"_blank\">ici</a>.",
-    "exchangesAreMissing": "Les échanges sont pris en compte dans les calculs mais ne sont pas indiqués actuellement. En savoir plus sur notre agrégation historique  <a href=\"https://github.com/electricityMaps/electricitymaps-contrib/wiki/Estimation-methods\" target=\"_blank\">ici</a>.",
-    "estimatedTooltip": "Les données en temps réel pour cette zone sont estimées sur la base des données de la source et des hypothèses du modèle.",
-    "aggregatedTooltip": "Les données pour cette zone sont agrégées sur la base des valeurs horaires historiques.",
-    "helpUs": "Aidez-nous à identifier le problème en consultant les <a href=\"{{link}}\" target=\"_blank\">journaux d'exécution</a> ou contactez le fournisseur de données."
+    "price-chart": {
+      "see": "Afficher les prix à venir",
+      "hide": "Masquer les prix à venir",
+      "today": "Aujourd'hui",
+      "tomorrow": "Demain",
+      "price-disclaimer": "Les prix excluent les taxes et les éventuels frais de réseau.",
+      "time-disclaimer": "Tous les horaires indiqués sont en",
+      "at": "A",
+      "now": "Maintenant"
+    }
   },
   "feedback-card": {
     "agree": "D'accord",
@@ -200,6 +217,11 @@
     "monthly": "mensuel",
     "yearly": "annuel"
   },
+  "ranking-panel": {
+    "title": "Impact sur le climat par zone",
+    "subtitle": "Classé par intensité carbone de l’électricité consommée (gCO₂eq/kWh)",
+    "search": "Rechercher une zone"
+  },
   "left-panel": {
     "applied-methodologies": {
       "carbonintensity": "Electricity Maps - Intensité carbone",
@@ -207,9 +229,6 @@
       "flowtracing": "Electricity Maps - Traçage des flux",
       "title": "Méthologies utilisées"
     },
-    "zone-list-header-title": "Impact sur le climat par zone",
-    "zone-list-header-subtitle": "Classé par intensité carbone de l’électricité consommée (gCO₂eq/kWh)",
-    "search": "Rechercher une zone",
     "get-data": "Voir nos offres commerciales d'API"
   },
   "header": {
@@ -285,8 +304,11 @@
   },
   "tooltips": {
     "carbonintensity": "Intensité carbone",
-    "lowcarbon": "Bas carbone",
-    "renewable": "Renouvelable",
+    "zoneHeader": {
+      "lowcarbon": "Inclut les énergies renouvelables et le nucléaire",
+      "renewable": "Inclut le solaire, l'éolien, l'hydroélectricité, la biomasse et la géothermie",
+      "carbonIntensity": "Grammes d'équivalent CO2 par kilowattheure (gCO2eq/kWh) mesurant les émissions de gaz à effet de serre issues de la production d'électricité"
+    },
     "crossborderexport": "Export transfrontalier",
     "carbonintensityexport": "Intensité carbone de l’export",
     "ofinstalled": "de la capacité installée",
@@ -303,7 +325,6 @@
     "consumption": "consommation",
     "cpinfo": "La <b>consommation</b> tient compte des importations et des exportations, la <b>production</b> les ignore.",
     "selectLanguage": "Choisissez une langue",
-    "lowCarbDescription": "Inclut les énergies renouvelables et le nucléaire",
     "dataIsDelayed": "Données en retard",
     "representing": "représentant",
     "ofemissions": "des émissions",
@@ -337,7 +358,6 @@
     "system": "Système"
   },
   "updatePrompt": {
-    "title": "Mise à jour disponible",
     "description": "Une nouvelle version de l'application est disponible, mettre à jour maintenant ?",
     "update": "Mettre à jour",
     "dismiss": "Ignorer"
@@ -364,6 +384,15 @@
   "oil": "fioul",
   "unknown": "inconnu",
   "ofCO2eq": "de CO₂eq",
+  "electricityStoredUsing": "est stockée via",
+  "emissionsStoredUsing": "sont stockées via",
+  "electricityExportedTo": "est exportée vers",
+  "emissionsExportedTo": "son exportées vers",
+  "electricityImportedFrom": "est importée depuis",
+  "emissionsImportedFrom": "sont importées depuis",
+  "electricityAvailableIn": "de l'électricité disponible en",
+  "emissionsAvailableIn": "des émissions de l'électricité disponible en",
+  "comesFrom": "est générée via",
   "theMap": {
     "groupName": "La carte",
     "mapColors-question": "Que signifient les couleurs sur la carte ?",
@@ -1370,6 +1399,9 @@
     "MX-PN": {
       "countryName": "Mexique",
       "zoneName": "Péninsule"
+    },
+    "MY": {
+      "zoneName": "Malaisie"
     },
     "MY-EM": {
       "countryName": "Malaisie",

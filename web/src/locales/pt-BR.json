@@ -1,11 +1,4 @@
 {
-  "panel-initial-text": {
-    "thisproject": "Este é um app de",
-    "opensource": "Código Aberto",
-    "see": "acessar",
-    "datasources": "fonte de dados",
-    "contribute": "Contribua <a href=\"{{link}}\" target=\"_blank\">adicionando seu país ou território</a>"
-  },
   "mobile-main-menu": {
     "map": "Electricity Maps",
     "areas": "Áreas",
@@ -55,9 +48,9 @@
     "aggregatedTooltip": "Os dados para essa zona são agregados e baseados em valores históricos de hora em hora.",
     "helpUs": "Nos ajude a identificar o problema dando uma olhada nos <a href=\"{{link}}\" target=\"_blank\">registros</a> ou contactando o provedor de dados."
   },
-  "left-panel": {
-    "zone-list-header-title": "Impacto climático",
-    "zone-list-header-subtitle": "Áreas ranqueadas pela intensidade de carbono que a eletricidade consome (gCO₂eq/kWh)",
+  "ranking-panel": {
+    "title": "Impacto climático",
+    "subtitle": "Áreas ranqueadas pela intensidade de carbono que a eletricidade consome (gCO₂eq/kWh)",
     "search": "Pesquise por país ou área"
   },
   "footer": {
@@ -74,8 +67,9 @@
   },
   "tooltips": {
     "carbonintensity": "Intensidade de emissões de CO₂",
-    "lowcarbon": "Baixo carbono",
-    "renewable": "Renovável",
+    "zoneHeader": {
+      "lowcarbon": "Inclui renováveis e nucleares"
+    },
     "crossborderexport": "Exportação transfronteiriça",
     "carbonintensityexport": "Intensidade de emissões de CO₂ na exportação",
     "ofinstalled": "da capacidade instalada",
@@ -92,7 +86,6 @@
     "consumption": "consumo",
     "cpinfo": "<b>consumo</b> leva em consideração importações e exportações, <b>produção</b> as ignora",
     "selectLanguage": "Selecione a linguagem",
-    "lowCarbDescription": "Inclui renováveis e nucleares",
     "representing": "representando",
     "ofemissions": "de emissões",
     "zoomIn": "Aumentar zoom",
@@ -1051,6 +1044,9 @@
       "countryName": "México",
       "zoneName": "Península"
     },
+    "MY": {
+      "zoneName": "Malaysia"
+    },
     "MY-EM": {
       "countryName": "Malaysia",
       "zoneName": "Borneo"
@@ -1736,7 +1732,7 @@
   "windDataError": "Dados eólicos estão indisponíveis",
   "solarDataError": "Dados solares estão indisponíveis",
   "info": {
-    "intro-text": "O Mapa da Eletricidade fornece informações em tempo-real na web e no celular para cidadãos, especialistas em energia, ONGs e legisladores promovendo um entendimento mais profundo sobre os desafios de transição de energia.",
+    "text": "O Mapa da Eletricidade fornece informações em tempo-real na web e no celular para cidadãos, especialistas em energia, ONGs e legisladores promovendo um entendimento mais profundo sobre os desafios de transição de energia.",
     "open-source-text": "Esse aplicativo é <a href='{{link}}' target='_blank'>de código aberto</a> e apoiado pela comunidade."
   },
   "button": {

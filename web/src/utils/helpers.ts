@@ -8,6 +8,9 @@ import {
   ZoneDetail,
 } from 'types';
 
+import zonesConfigJSON from '../../config/zones.json';
+import { CombinedZonesConfig } from '../../geo/types';
+
 export function useGetZoneFromPath() {
   const { zoneId } = useParams();
   const match = useMatch('/zone/:id');
@@ -27,13 +30,6 @@ export function useUserLocation(): callerLocation {
     return callerLocation;
   }
   return null;
-}
-
-export function getCO2IntensityByMode(
-  zoneData: StateZoneData,
-  electricityMixMode: string
-) {
-  return electricityMixMode === 'consumption' ? zoneData?.c?.ci : zoneData?.p?.ci;
 }
 
 /**
@@ -106,24 +102,20 @@ export function getFossilFuelRatio(
  * @param co2intensity - The carbon intensity for consumption
  * @param co2intensityProduction - The carbon intensity for production
  */
-export function getCarbonIntensity(
+export const getCarbonIntensity = (
   zoneData: StateZoneData,
   isConsumption: boolean
-): number {
-  return (isConsumption ? zoneData?.c?.ci : zoneData?.p?.ci) ?? Number.NaN;
-}
+): number => (isConsumption ? zoneData?.c?.ci : zoneData?.p?.ci) ?? Number.NaN;
 
 /**
  * Returns the renewable ratio of a zone
  * @param zoneData - The zone data
  * @param isConsumption - Whether the ratio is for consumption or production
  */
-export function getRenewableRatio(
+export const getRenewableRatio = (
   zoneData: StateZoneData,
   isConsumption: boolean
-): number {
-  return (isConsumption ? zoneData?.c?.rr : zoneData?.p?.rr) ?? Number.NaN;
-}
+): number => (isConsumption ? zoneData?.c?.rr : zoneData?.p?.rr) ?? Number.NaN;
 
 /**
  * Function to round a number to a specific amount of decimals.
@@ -131,12 +123,9 @@ export function getRenewableRatio(
  * @param {number} decimals - Defaults to 2 decimals.
  * @returns {number} Rounded number.
  */
-export const round = (number: number, decimals = 2): number => {
-  return (
-    (Math.round((Math.abs(number) + Number.EPSILON) * 10 ** decimals) / 10 ** decimals) *
-    Math.sign(number)
-  );
-};
+export const round = (number: number, decimals = 2): number =>
+  (Math.round((Math.abs(number) + Number.EPSILON) * 10 ** decimals) / 10 ** decimals) *
+  Math.sign(number);
 
 /**
  * Returns the net exchange of a zone
@@ -172,3 +161,11 @@ export function getNetExchange(
 
   return netExchangeValue;
 }
+
+export const getZoneTimezone = (zoneId?: string) => {
+  if (!zoneId) {
+    return undefined;
+  }
+  const { zones } = zonesConfigJSON as unknown as CombinedZonesConfig;
+  return zones[zoneId]?.timezone;
+};

@@ -1,6 +1,6 @@
 {
   "info": {
-    "intro-text": "La app Electricity Maps provee información en tiempo real web y móvil para ciudadanos, expertos en energía, ONG y legisladores que promueven un mejor entendimiento de los desafíos de la transición energética.",
+    "text": "La app Electricity Maps provee información en tiempo real web y móvil para ciudadanos, expertos en energía, ONG y legisladores que promueven un mejor entendimiento de los desafíos de la transición energética.",
     "open-source-text": "Esta app es de <a href='{{link}}' target='_blank'>código abierto</a> e impulsada por la comunidad."
   },
   "button": {
@@ -13,13 +13,6 @@
   },
   "settings-modal": {
     "title": "Configuración"
-  },
-  "panel-initial-text": {
-    "thisproject": "Esta app es de",
-    "opensource": "código abierto",
-    "see": "ver",
-    "datasources": "las fuentes de los datos",
-    "contribute": "Contribuye <a href=\"{{link}}\" target=\"_blank\">añadiendo tu región o país</a>"
   },
   "mobile-main-menu": {
     "map": "Electricity Maps",
@@ -135,9 +128,9 @@
     "monthly": "mensual",
     "yearly": "anual"
   },
-  "left-panel": {
-    "zone-list-header-title": "Impacto climático por zona",
-    "zone-list-header-subtitle": "Según la intensidad de carbono de la electricidad consumida (gCO₂eq/kWh)",
+  "ranking-panel": {
+    "title": "Impacto climático por zona",
+    "subtitle": "Según la intensidad de carbono de la electricidad consumida (gCO₂eq/kWh)",
     "search": "Buscar zonas"
   },
   "footer": {
@@ -154,8 +147,9 @@
   },
   "tooltips": {
     "carbonintensity": "Intensidad de carbono",
-    "lowcarbon": "Baja en emisiones",
-    "renewable": "Renovables",
+    "zoneHeader": {
+      "lowcarbon": "Incluye renovables y nuclear"
+    },
     "crossborderexport": "Exportación transfronteriza",
     "carbonintensityexport": "Intensidad de carbono de la energía exportada",
     "ofinstalled": "de la capacidad instalada",
@@ -178,11 +172,9 @@
     "cpinfo": "El <b>consumo</b> tiene en cuenta las importaciones y exportaciones de energía, la <b>producción</b> no",
     "aggregateInfo": "Alternar entre visualización a nivel de zona o vista agregada de país",
     "selectLanguage": "Cambiar de idioma",
-    "lowCarbDescription": "Incluye renovables y nuclear",
     "dataIsDelayed": "Datos con retraso"
   },
   "updatePrompt": {
-    "title": "Actualización disponible",
     "description": "Una nueva versión de la aplicación está disponible, ¿actualizar ahora?",
     "update": "Actualizar",
     "dismiss": "Descartar"
@@ -1146,6 +1138,9 @@
     "MX-PN": {
       "countryName": "México",
       "zoneName": "Peninsula"
+    },
+    "MY": {
+      "zoneName": "Malasia"
     },
     "MY-EM": {
       "countryName": "Malasia",

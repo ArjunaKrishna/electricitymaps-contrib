@@ -84,7 +84,7 @@
   "hydro": "Vannkraft",
   "hydro storage": "Pumpekraftverk",
   "info": {
-    "intro-text": "Electricity Map innsikt i sanntid på nett og mobil til allmennheten, energieksperter, frivillige organisasjoner og myndigheter for å gi dypere forståelse av det grønne skiftet.",
+    "text": "Electricity Map innsikt i sanntid på nett og mobil til allmennheten, energieksperter, frivillige organisasjoner og myndigheter for å gi dypere forståelse av det grønne skiftet.",
     "open-source-text": "Tjenesten er <a href='{{link}}' target='_blank'>åpen kildekode</a> og utviklet i samarbeid med frivillige."
   },
   "button": {
@@ -95,10 +95,10 @@
     "feedback": "Send tilbakemelding",
     "github": "Se på GitHub"
   },
-  "left-panel": {
+  "ranking-panel": {
     "search": "Søk etter land/region",
-    "zone-list-header-subtitle": "Sortert etter CO₂-intensitet fra strømforbruk (gCO₂eq/kWh)",
-    "zone-list-header-title": "Hver regions klimapåvirkning"
+    "subtitle": "Sortert etter CO₂-intensitet fra strømforbruk (gCO₂eq/kWh)",
+    "title": "Hver regions klimapåvirkning"
   },
   "legends": {
     "carbonintensity": "CO₂-intensitet",
@@ -182,13 +182,6 @@
       "text": "Vind- og solenergiproduksjon er væravhengig. Klikk på sol- og vind-knappene for å få oversikt over forholdene for solskinn og vind i verden akkurat nå."
     }
   },
-  "panel-initial-text": {
-    "contribute": "Bidra ved å <a href=\"{{link}}\" target=\"_blank\">legge til data for ditt område</a>",
-    "datasources": "kildekode",
-    "opensource": "åpen kildekode",
-    "see": "se",
-    "thisproject": "Prosjektet er"
-  },
   "settings-modal": {
     "title": "Innstillinger"
   },
@@ -225,15 +218,15 @@
     "hideSolarLayer": "Skjul sol",
     "hideWindLayer": "Skjul vind",
     "importing": "Importerer",
-    "lowCarbDescription": "Inkluderer fornybar og kjernekraft",
-    "lowcarbon": "Lavutslipp (CO₂)",
+    "zoneHeader": {
+      "lowcarbon": "Inkluderer fornybar og kjernekraft"
+    },
     "netExchange": "Netto utveksling",
     "noParserInfo": "Ingen data tilgjengelig",
     "ofemissions": "av utslipp",
     "ofinstalled": "av installeret kapasitet",
     "price": "Pris",
     "production": "produksjon",
-    "renewable": "Fornybar",
     "representing": "representerer",
     "selectLanguage": "Bytt språk",
     "showSolarLayer": "Vis sol",
@@ -1186,6 +1179,9 @@
     "MX-PN": {
       "countryName": "Mexico",
       "zoneName": "Halvøya"
+    },
+    "MY": {
+      "zoneName": "Malaysia"
     },
     "MY-EM": {
       "countryName": "Malaysia",
